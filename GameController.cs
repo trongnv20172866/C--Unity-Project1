@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
     {
        m_spawnTime = 0;
        m_ui = FindObjectOfType<UIManager>(); // tra ve doi tuong UIManager
-       m_ui.SetScoreText("Score: " + m_score); //
+       m_ui.SetScoreText("Score: " + m_score); //lenh UIManager tham chieu den SetScoreText co kieu text = "Score: " + m_score co kieu int
     }
 
     public void SpawnBall()

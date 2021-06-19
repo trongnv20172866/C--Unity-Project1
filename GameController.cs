@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject ball;
+    public GameObject ball; // Doi tuong tham chieu den ball
     public float spawnTime;
     float m_spawnTime;
 
-    UIManager m_ui;
+    UIManager m_ui; // Tham chieu UIManager va dat ten la m_ui
 
     int m_score;
     bool m_isGameover;
@@ -16,16 +16,16 @@ public class GameController : MonoBehaviour
     void Start()
     {
        m_spawnTime = 0;
-       m_ui = FindObjectOfType<UIManager>();
-       m_ui.SetScoreText("Score: " + m_score);
+       m_ui = FindObjectOfType<UIManager>(); // tra ve doi tuong UIManager
+       m_ui.SetScoreText("Score: " + m_score); //
     }
 
     public void SpawnBall()
     {
-        Vector2 spawnPos = new Vector2(Random.Range(-10, 10), 10);
+        Vector2 spawnPos = new Vector2(Random.Range(-10, 10), 10); // Spaw o vi tri x= Random tu toa do -10 ->10 va y = const = 10
         if(ball)
         {
-            Instantiate(ball, spawnPos, Quaternion.identity);
+            Instantiate(ball, spawnPos, Quaternion.identity); // Khoi tao(Ball, vector2 spawnPos, Khong quay);
         }
 
     }

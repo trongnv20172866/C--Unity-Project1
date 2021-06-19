@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public Text ScoreText;
-    public GameObject GameOverPanel;
+    public GameObject GameOverPanel; // doi tuong trong game
 
     public void SetScoreText(string txt)
     {
